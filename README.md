@@ -2,16 +2,16 @@ iSun
 
 This is my first personal full stack web application project!
 
-The idea of this web application is to be able to register for an account on iSun. 
-Then, you can either choose to start up a webcam livestream, or watch someone else's.
-You can search for a specific livestream, or browse through options.
-You can create your own custom profile and be able to add/remove friends. You'll also be able to view your friends list.
-There will be an "ABOUT US" page for those who are confused about the purpose of the website.
-If you choose to livestream, you have a designated "Drawing and Typing" board, as well as a chatboard, where you can interact and talk to the people watching your livestream.
-By default, only the livestreamer is allowed to draw and type on the board, and anyone watching the stream is able to see what they're doing in real time.
-They can choose the font, font size, and color! They can also choose the type of drawing tool: marker, pencil, airbrush, bucket, etc.
-The streamer can choose someone watching the stream and invite them to draw on the board with them!
-Also, there will be a feature that allows the streamer to either choose themselves, or have a randomizer, choose a random person from the stream and invite them to "video call" with the streamer.
+The idea of this web application is to be able to register for an account on iSun. <br><br>
+Then, you can either choose to start up a webcam livestream, or watch someone else's. <br><br>
+You can search for a specific livestream, or browse through options. <br><br>
+You can create your own custom profile and be able to add/remove friends. You'll also be able to view your friends list. <br><br>
+There will be an "ABOUT US" page for those who are confused about the purpose of the website. <br><br>
+If you choose to livestream, you have a designated "Drawing and Typing" board, as well as a chatboard, where you can interact and talk to the people watching your livestream. <br><br>
+By default, only the livestreamer is allowed to draw and type on the board, and anyone watching the stream is able to see what they're doing in real time. <br><br>
+They can choose the font, font size, and color! They can also choose the type of drawing tool: marker, pencil, airbrush, bucket, etc. <br><br>
+The streamer can choose someone watching the stream and invite them to draw on the board with them! <br><br>
+Also, there will be a feature that allows the streamer to either choose themselves, or have a randomizer, choose a random person from the stream and invite them to "video call" with the streamer. <br><br>
 
 --------------------------------------------------------------------------------------------------------------
 
