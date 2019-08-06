@@ -1,8 +1,10 @@
 import React from 'react';
+import Navbar from '../Navbar';
 
 const App = () => (
   <div>
-    <h1>App</h1>
+    <Navbar/>
+    <h1>iSun App</h1>
   </div>
 );
 
