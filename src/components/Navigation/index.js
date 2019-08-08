@@ -5,6 +5,9 @@ import SignOutButton from '../SignOut';
 import * as ROUTES from '../../constants/routes';
 import { AuthUserContext } from '../Session';
 
+import Button from '@material-ui/core/Button';
+import { MemoryRouter as Router } from 'react-router';
+
 const Navigation = () => (
   <div>
     <AuthUserContext.Consumer>
@@ -14,7 +17,6 @@ const Navigation = () => (
     </AuthUserContext.Consumer>
   </div>
 );
-
 const NavigationAuth = () => (
   <ul>
     <li>

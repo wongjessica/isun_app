@@ -17,6 +17,17 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
+import SignOutButton from '../SignOut';
+import * as ROUTES from '../../constants/routes';
+import { AuthUserContext } from '../Session';
+
+import Button from '@material-ui/core/Button';
+import { MemoryRouter as Router } from 'react-router';
+
+const CollisionLink = React.forwardRef((props, ref) => (
+  <Link innerRef={ref} to="/getting-started/installation/" {...props} />
+));
+
 const useStyles = makeStyles(theme => ({
   grow: {
     flexGrow: 1,
@@ -115,8 +126,12 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+    <Link style={{ textDecoration: 'none', color: 'black' }} to="/profile">
+      <MenuItem onClick={handleMenuClose}>Edit Profile</MenuItem>
+    </Link>
+      <Link style={{ textDecoration: 'none', color: 'black' }} to={ROUTES.ACCOUNT}>
+        <MenuItem onClick={handleMenuClose}>Account Settings</MenuItem>
+      </Link>
     </Menu>
   );
 
@@ -159,6 +174,7 @@ export default function PrimarySearchAppBar() {
         <p>Profile</p>
       </MenuItem>
     </Menu>
+
   );
 
   return (
@@ -167,16 +183,18 @@ export default function PrimarySearchAppBar() {
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
             <p>
-                <img src={isunLogo} alt="isun logo" height="50" width="50"></img> 
-                 iSun
+            <Link to="/">
+                <img src={isunLogo} alt="isun logo" height="45" width="45"></img> 
+            </Link>
             </p>
+            <p> iSun </p>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Search…"
+              placeholder="Search"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
@@ -184,6 +202,25 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
+
+          <Button size="small" className={classes.margin}>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to={ROUTES.LANDING}>Dashboard</Link> 
+          </Button>
+        
+          <Button size="small" className={classes.margin}>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to={ROUTES.HOME}>Home</Link>
+          </Button>
+
+          <Button size="small" className={classes.margin}>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to={ROUTES.ACCOUNT}>Account</Link>
+          </Button>
+
+          <Button size="small" className={classes.margin}>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to={ROUTES.ADMIN}>Admin</Link>
+          </Button>
+
+          <SignOutButton />
+          
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
